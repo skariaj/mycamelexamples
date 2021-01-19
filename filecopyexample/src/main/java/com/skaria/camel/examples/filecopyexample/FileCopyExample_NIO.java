@@ -3,14 +3,13 @@ package com.skaria.camel.examples.filecopyexample;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.io.File;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Stream;
@@ -21,7 +20,7 @@ public class FileCopyExample_NIO {
 		
 		String inbox = "data/inbox";
 		String outbox = "data/outbox";
-		String filename = "sample1.txt";
+		String filename = "sample2.txt";
 		Path inboxDirPath = Paths.get(inbox );
 		Path outboxDirPath = Paths.get(outbox );
 		
