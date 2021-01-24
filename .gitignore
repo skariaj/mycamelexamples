@@ -5,4 +5,6 @@
 .classpath
 .project
 .settings/
+activemq-data
+target
 
