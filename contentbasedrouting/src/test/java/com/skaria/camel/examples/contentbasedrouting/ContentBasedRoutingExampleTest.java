@@ -16,7 +16,9 @@ public class ContentBasedRoutingExampleTest extends CamelTestSupport{
 	@Override
 	protected CamelContext createCamelContext() throws Exception {
 		CamelContext context = super.createCamelContext();
-		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+		//String activemqUrl = "tcp://localhost:61616";//connect to actual activemq broker
+		String activemqUrl = "vm://localhost";//for unit test connect to embedded broker
+		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(activemqUrl);
 		
 		context.addComponent("jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
 		return context;
