@@ -20,6 +20,7 @@
 		<activemq-version>5.15.7</activemq-version>
 		<xstream>1.4.10</xstream>
 		<camel-xstream>2.21.0</camel-xstream>
+		<commons-pool2>2.6.0</commons-pool2>
 	</properties>
 
 	<dependencyManagement>
@@ -71,6 +72,21 @@
 				<groupId>org.apache.camel</groupId>
 				<artifactId>camel-xstream</artifactId>
 				<version>${camel-xstream}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-spring</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-spring-javaconfig</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-pool2</artifactId>
+				<version>${commons-pool2}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

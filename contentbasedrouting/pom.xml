@@ -46,13 +46,26 @@
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
-			
+
 		</dependency>
 		<dependency>
-				<groupId>org.apache.camel</groupId>
-				<artifactId>camel-xstream</artifactId>
-				
-			</dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-xstream</artifactId>
+
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+		</dependency> -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-javaconfig</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+
+		</dependency>
 	</dependencies>
 
 </project>
