@@ -43,7 +43,7 @@ public class RouteConfig extends  CamelConfiguration{
 	public JmsComponent jms()
 	{
 		JmsComponent component = JmsComponent.jmsComponentAutoAcknowledge(connectionFactory());
-		component.setConnectionFactory(connectionFactory());
+		//component.setConnectionFactory(connectionFactory());
 		component.setTransacted(true);
 		return component;
 		

@@ -1,18 +1,10 @@
 package com.skaria.camel.examples.contentbasedrouting;
 
-import javax.jms.ConnectionFactory;
-
-
-import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.camel.component.ActiveMQComponent;
-import org.apache.camel.CamelContext;
 import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.spi.Registry;
 import org.apache.camel.test.spring.CamelSpringTestSupport;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.AbstractApplicationContext;
 
 
