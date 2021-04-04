@@ -11,6 +11,9 @@
 	<modules>
 		<module>filecopyexample</module>
 		<module>contentbasedrouting</module>
+		<module>camel-spring-boot</module>
+		<module>jms-mock-activemq</module>
+		<module>jms-mock-rabbitmq</module>
 	</modules>
 
 	<properties>
@@ -21,6 +24,8 @@
 		<xstream>1.4.10</xstream>
 		<camel-xstream>2.21.0</camel-xstream>
 		<commons-pool2>2.6.0</commons-pool2>
+		<spring-boot>2.1.4.RELEASE</spring-boot>
+		<qpid-broker-version>7.1.0</qpid-broker-version>
 	</properties>
 
 	<dependencyManagement>
@@ -87,6 +92,63 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-pool2</artifactId>
 				<version>${commons-pool2}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring-boot}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel.springboot</groupId>
+				<artifactId>camel-spring-boot-starter</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel.springboot</groupId>
+				<artifactId>camel-servlet-starter</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-http</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-undertow</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-main</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-rabbitmq</artifactId>
+				<version>${camel-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.qpid</groupId>
+				<artifactId>qpid-broker-core</artifactId>
+				<version>${qpid-broker-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.qpid</groupId>
+				<artifactId>qpid-broker-plugins-amqp-0-8-protocol</artifactId>
+				<version>${qpid-broker-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.qpid</groupId>
+				<artifactId>qpid-broker-plugins-memory-store</artifactId>
+				<version>${qpid-broker-version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
