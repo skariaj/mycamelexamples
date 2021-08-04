@@ -7,7 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-
 	<modules>
 		<module>filecopyexample</module>
 		<module>contentbasedrouting</module>
@@ -26,6 +25,7 @@
 		<commons-pool2>2.6.0</commons-pool2>
 		<spring-boot>2.1.4.RELEASE</spring-boot>
 		<qpid-broker-version>7.1.0</qpid-broker-version>
+                <some-version>7.1.0</some-version>
 	</properties>
 
 	<dependencyManagement>
